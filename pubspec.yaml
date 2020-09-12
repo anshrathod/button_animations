@@ -1,7 +1,8 @@
 name: button_animations
-description: A new Flutter project.
+description: Highly customizable animated buttons
 
 version: 1.0.0+1
+homepage: https://github.com/anshrathod/button_animations
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
