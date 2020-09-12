@@ -1,0 +1,11 @@
+.DS_Store
+.dart_tool/
+.packages
+.pub/
+build/
+ios/
+pubspec.lock
+flutter_auth_buttons.iml
+android/
+example/
+.idea/
