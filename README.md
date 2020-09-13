@@ -1,6 +1,6 @@
 # Button Animations
 
-[![pub package](https://img.shields.io/pub/v/path_provider.svg)](https://pub.dartlang.org/packages/path_provider)
+![dart](https://img.shields.io/badge/dart-2.9.0.14.1.beta-blue?logo=dart&logoColor=blue&labelColor=black&color=0175C2) ![flutter](https://img.shields.io/badge/flutter-1.19.0--4.2.pre-blue?logo=flutter&logoColor=blue&labelColor=white) [![pub package](https://img.shields.io/pub/v/path_provider.svg)](https://pub.dev/packages/button_animations)
 
 [button_animations](https://pub.dev/packages/button_animations) is a package to make highly customizable [Flutter](https://flutter.dev/) widgets with 3d animations.
 
@@ -44,21 +44,21 @@ To use this plugin, add the latest version of `button_animations` as a [dependen
 
 |    Theme Name    |                                                           Example                                                           |
 | :--------------: | :-------------------------------------------------------------------------------------------------------------------------: |
-|     Success      |   <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/success.png" width="300">    |
-|  SuccessOutline  |  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/successout.png" width="300">  |
-|      Danger      |    <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/danger.png" width="300">    |
-|  DangerOutline   |  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/dangerout.png" width="300">   |
-|     Warning      |   <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/warning.png" width="300">    |
-|  WarningOutline  |  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/warningout.png" width="300">  |
-|       Info       |     <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/info.png" width="300">     |
-|   InfoOutline    |   <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/infoout.png" width="300">    |
-|     Primary      |   <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/primary.jpg" width="300">    |
-|  PrimaryOutline  |  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/primaryout.jpg" width="300">  |
-|    Secondary     |  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/secondary.jpg" width="300">   |
-| SecondaryOutline | <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/secondaryout.png" width="300"> |
-|       Dark       |     <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/dark.jpg" width="300">     |
-|   DarkOutline    |   <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/darkout.png" width="300">    |
-|      Light       |    <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/light.png" width="300">     |
+|     success      |   <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/success.png" width="300">    |
+|  successOutline  |  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/successout.png" width="300">  |
+|      danger      |    <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/danger.png" width="300">    |
+|  dangerOutline   |  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/dangerout.png" width="300">   |
+|     warning      |   <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/warning.png" width="300">    |
+|  warningOutline  |  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/warningout.png" width="300">  |
+|       info       |     <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/info.png" width="300">     |
+|   infoOutline    |   <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/infoout.png" width="300">    |
+|     primary      |   <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/primary.jpg" width="300">    |
+|  primaryOutline  |  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/primaryout.jpg" width="300">  |
+|    secondary     |  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/secondary.jpg" width="300">   |
+| secondaryOutline | <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/secondaryout.png" width="300"> |
+|       dark       |     <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/dark.jpg" width="300">     |
+|   darkOutline    |   <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/darkout.png" width="300">    |
+|      light       |    <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/light.png" width="300">     |
 
 ## Example
 
@@ -68,7 +68,7 @@ To use this plugin, add the latest version of `button_animations` as a [dependen
 
  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/danger.png" width="500">
 
-```ruby 
+```ruby
 AnimatedButton(
   child: Text(
     'Danger', // add your text here
@@ -92,7 +92,7 @@ AnimatedButton(
   darkshadow: false,
   isOutline: true,
   borderWidth: 1,
-  
+
   onTap: () {},
 ),
 ```
@@ -131,7 +131,7 @@ AnimatedButton(
 
 - Gradient Buttons
 
- <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/gradient.jpg" width="500"> 
+ <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/gradient.jpg" width="500">
 
 ```ruby
 Row(
@@ -203,7 +203,7 @@ Row(
   ],
 ),
 
-````
+```
 
 - Rounded Buttons
 
@@ -238,7 +238,7 @@ Row(
   ],
 ),
 
-````
+```
 
 - Rounded Buttons with Icons
 

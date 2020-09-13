@@ -16,7 +16,6 @@ enum PredefinedThemes {
   dark,
   darkOutline,
   light,
-  disabled,
 }
 
 List definedColors = [

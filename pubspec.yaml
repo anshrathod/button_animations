@@ -1,7 +1,7 @@
 name: button_animations
-description: Highly customizable animated buttons
+description: A package that helps you make highly customizable animated 3d-buttons.
 
-version: 1.0.1
+version: 1.0.1+2
 homepage: https://github.com/anshrathod/button_animations
 
 environment:
