@@ -7,5 +7,4 @@ ios/
 pubspec.lock
 flutter_auth_buttons.iml
 android/
-example/
 .idea/
