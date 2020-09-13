@@ -9,9 +9,9 @@
 To use this plugin, add the latest version of `button_animations` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
 <p>
-<img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/3.jpg" width="275" height="450">
-<img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/6.jpg" width="275" height="450">
-<img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/7.jpg" width="275" height="450">
+<img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/3.jpg" width="265" height="424">
+<img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/6.jpg" width="265" height="424">
+<img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/7.jpg" width="265" height="424">
 </p>
 
 ### Parameters and their Description
@@ -66,7 +66,7 @@ To use this plugin, add the latest version of `button_animations` as a [dependen
 
 ##### 1. Add borderRadius and, isOutline to add more customization.
 
- <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/danger.png"/>
+ <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/danger.png" width="500">
 
 ```ruby 
 AnimatedButton(
@@ -99,7 +99,7 @@ AnimatedButton(
 
 ##### 2. Use blurRadius and blurColor
 
- <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/dark.jpg">
+ <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/dark.jpg" width="500">
 
 ```ruby
 AnimatedButton(
@@ -131,7 +131,7 @@ AnimatedButton(
 
 - Gradient Buttons
 
- <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/gradient.jpg">
+ <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/gradient.jpg" width="500"> 
 
 ```ruby
 Row(
@@ -207,7 +207,7 @@ Row(
 
 - Rounded Buttons
 
- <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/rounded.jpg">
+ <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/rounded.jpg" width="500">
 
 ```ruby
 Row(
@@ -242,7 +242,7 @@ Row(
 
 - Rounded Buttons with Icons
 
- <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/roundedicon.jpg">
+ <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/roundedicon.jpg" width="500">
 
 ```ruby
 Row(
@@ -291,7 +291,7 @@ Row(
 
 - Social Media Buttons
 
- <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/socialmedia.jpg">
+ <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/socialmedia.jpg" width="500">
 
 ```ruby
 Row(
@@ -384,7 +384,7 @@ Row(
 
 - Sign in Buttons
 
- <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/signin.jpg">
+ <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/signin.jpg" width="300">
 
 ```ruby
 Padding(
@@ -549,7 +549,7 @@ Padding(
 
 - Custom Buttons
 
- <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/imagebutton.jpg">
+ <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/imagebutton.jpg" width="250">
 
 ```ruby
 Padding(
