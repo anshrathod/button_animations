@@ -9,9 +9,9 @@
 To use this plugin, add the latest version of `button_animations` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
 <p>
-<img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/3.jpg" width="250" height="450">
-<img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/6.jpg" width="250" height="450">
-<img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/7.jpg" width="250" height="450">
+<img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/3.jpg" width="275" height="450">
+<img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/6.jpg" width="275" height="450">
+<img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/7.jpg" width="275" height="450">
 </p>
 
 ### Parameters and their Description
@@ -66,8 +66,9 @@ To use this plugin, add the latest version of `button_animations` as a [dependen
 
 ##### 1. Add borderRadius and, isOutline to add more customization.
 
- <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/danger.png">
-```dart
+ <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/danger.png"/>
+
+```ruby 
 AnimatedButton(
   child: Text(
     'Danger', // add your text here
@@ -99,7 +100,8 @@ AnimatedButton(
 ##### 2. Use blurRadius and blurColor
 
  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/dark.jpg">
-```dart
+
+```ruby
 AnimatedButton(
   child: Text(
     'Dark', // add your text here
@@ -130,7 +132,8 @@ AnimatedButton(
 - Gradient Buttons
 
  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/gradient.jpg">
-```dart
+
+```ruby
 Row(
   children: [
     Padding(
@@ -204,9 +207,9 @@ Row(
 
 - Rounded Buttons
 
-
  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/rounded.jpg">
-```dart
+
+```ruby
 Row(
   children: [
     Padding(
@@ -241,7 +244,7 @@ Row(
 
  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/roundedicon.jpg">
 
-```dart
+```ruby
 Row(
   children: [
     Padding(
@@ -290,7 +293,7 @@ Row(
 
  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/socialmedia.jpg">
 
-```dart
+```ruby
 Row(
   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
   children: [
@@ -383,7 +386,7 @@ Row(
 
  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/signin.jpg">
 
-```dart
+```ruby
 Padding(
   padding: const EdgeInsets.all(10),
   child: AnimatedButton(
@@ -548,7 +551,7 @@ Padding(
 
  <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/imagebutton.jpg">
 
-```dart
+```ruby
 Padding(
   padding: const EdgeInsets.all(10),
   child: AnimatedButton(
