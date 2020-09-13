@@ -7,7 +7,14 @@
 ## Getting Started
 
 To use this plugin, add the latest version of `button_animations` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
-![Demo 1](https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/3.jpg) ![Demo 2](https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/6.jpg) ![Demo 3](https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/7.jpg)
+
+<p>
+<img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/3.jpg" width="250" height="450">
+<img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/6.jpg" width="250" height="450">
+<img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/7.jpg" width="250" height="450">
+</p>
+
+### Parameters and their Description
 
 |      Datatype      |     Parameter      |                                                        Description                                                         |      Default Value       | Required |
 | :----------------: | :----------------: | :------------------------------------------------------------------------------------------------------------------------: | :----------------------: | :------: |
@@ -32,3 +39,40 @@ To use this plugin, add the latest version of `button_animations` as a [dependen
 |      `Color`       |       color        |                              The color of the widget(if type is not null, this will not work)                              |       Colors.blue        |    No    |
 |      `Color`       |    shadowColor     |                       The color of the shadow of the widget(if type is not null, this will not work)                       |       Colors.black       |    No    |
 |   `List<Color>`    |       colors       |     The list of colors for the gradient for the background of the widget(isMulticolor should be true for this to work)     |            []            |    No    |
+
+### PredefinedThemes
+
+|    Theme Name    | Example |
+| :--------------: | :-----: |
+|     Success      |         |
+|  SuccessOutline  |         |
+|      Danger      |         |
+|  DangerOutline   |         |
+|     Warning      |         |
+|  WarningOutline  |         |
+|       Info       |         |
+|   InfoOutline    |         |
+|     Primary      |         |
+|  PrimaryOutline  |         |
+|    Secondary     |         |
+| SecondaryOutline |         |
+|       Dark       |         |
+|   DarkOutline    |         |
+|      Light       |         |
+
+## Example
+
+#### For any of the predefined themes you can just have to add the child widget, type, and the onTap function:
+
+```json
+AnimatedButton(
+  child: Text(
+    'Success', // add your text here
+    style: TextStyle(
+      color: Colors.white,
+    ),
+  ),
+  type: PredefinedTheme.success,
+  onTap: () {},
+),
+```
