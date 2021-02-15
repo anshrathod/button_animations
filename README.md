@@ -1,6 +1,7 @@
 # Button Animations
 
 ![dart](https://img.shields.io/badge/dart-2.9.0.14.1.beta-blue?logo=dart&logoColor=blue&labelColor=black&color=0175C2) ![flutter](https://img.shields.io/badge/flutter-1.19.0--4.2.pre-blue?logo=flutter&logoColor=blue&labelColor=white) [![pub package](https://img.shields.io/pub/v/path_provider.svg)](https://pub.dev/packages/button_animations)
+<img src="https://visitor-badge.glitch.me/badge?page_id=anshrathod.button_animations">
 
 The [button_animations](https://pub.dev/packages/button_animations) is a package to make highly customizable [Flutter](https://flutter.dev/) widgets with 3d animations.
 
