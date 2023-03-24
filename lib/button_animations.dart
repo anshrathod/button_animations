@@ -87,14 +87,13 @@ class AnimatedButton extends StatefulWidget {
     this.borderWidth = 1,
     this.blurColor = Colors.black,
     this.shadowColor,
-  })  : assert(child != null),
-        super(key: key);
+  }) : super(key: key);
 
   @override
-  _AnimatedButtonState createState() => _AnimatedButtonState();
+  AnimatedButtonState createState() => AnimatedButtonState();
 }
 
-class _AnimatedButtonState extends State<AnimatedButton> {
+class AnimatedButtonState extends State<AnimatedButton> {
   double? btnPositionBottom;
   double? btnPositionTop;
   double? btnPositionLeft;
@@ -104,7 +103,7 @@ class _AnimatedButtonState extends State<AnimatedButton> {
   Color? shadowColor;
   Color? borderColor;
   Color? blurColor;
-  _AnimatedButtonState();
+  AnimatedButtonState();
 
   @override
   void initState() {
@@ -179,7 +178,7 @@ class _AnimatedButtonState extends State<AnimatedButton> {
                       BoxShadow(
                         color: blurColor!,
                         blurRadius: widget.blurRadius!,
-                        offset: Offset(0.0, 0.0),
+                        offset: const Offset(0.0, 0.0),
                       ),
                     ],
                   ),

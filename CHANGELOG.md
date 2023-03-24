@@ -1,11 +1,9 @@
+## 2.0.0+3
+- Added null safety checks
+- Made package comptible with dart 3
 ## 1.0.1+2
-
-- Cleaned Example and added comments to the package.
-
+- Cleaned example and added comments to the package.
 ## 1.0.1
-
-- Added Example.
-
+- Added xample.
 ## 1.0.0
-
-- Initial Open Source release.
+- Initial open source release.
