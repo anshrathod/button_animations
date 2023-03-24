@@ -51,6 +51,18 @@ class _MyHomePageState extends State<MyHomePage> {
                         type: PredefinedThemes.success,
                         onTap: () {}),
                   ),
+                  Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: AnimatedButton(
+                        child: Text(
+                          'Success',
+                          style: TextStyle(
+                            color: Colors.green,
+                          ),
+                        ),
+                        type: PredefinedThemes.successOutline,
+                        onTap: () {}),
+                  ),
                 ],
               ),
               SizedBox(height: 25),

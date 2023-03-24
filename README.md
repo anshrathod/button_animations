@@ -1,6 +1,6 @@
 # Button Animations
 
-![dart](https://img.shields.io/badge/dart-2.9.0.14.1.beta-blue?logo=dart&logoColor=blue&labelColor=black&color=0175C2) ![flutter](https://img.shields.io/badge/flutter-1.19.0--4.2.pre-blue?logo=flutter&logoColor=blue&labelColor=white) [![pub package](https://img.shields.io/pub/v/path_provider.svg)](https://pub.dev/packages/button_animations)
+![dart](https://img.shields.io/badge/dart-2.19.5-blue?logo=dart&logoColor=blue&labelColor=black&color=0175C2) ![flutter](https://img.shields.io/badge/flutter-3.7.8-blue?logo=flutter&logoColor=blue&labelColor=black) [![pub package](https://img.shields.io/pub/v/path_provider.svg)](https://pub.dev/packages/button_animations)
 <img src="https://visitor-badge.glitch.me/badge?page_id=anshrathod.button_animations">
 
 The [button_animations](https://pub.dev/packages/button_animations) is a package to make highly customizable [Flutter](https://flutter.dev/) widgets with 3d animations.
@@ -8,6 +8,14 @@ The [button_animations](https://pub.dev/packages/button_animations) is a package
 ## Getting Started
 
 To use this plugin, add the latest version of `button_animations` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
+
+### Platform Support
+
+| Android | iOS | Web | MacOS | Linux | Windows |
+| :-----: | :-: | :---: | :-----: | :-: | :---: |
+| &#9989;  | &#9989; | &#9989; | &#9989;  | &#9989; | &#9989; |
+
+### Screenshots
 
 <p>
 <img src="https://raw.githubusercontent.com/anshrathod/button_animations/master/Screen-shots/3.jpg" width="30%" height="424">

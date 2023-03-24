@@ -4,54 +4,70 @@ import 'package:flutter/material.dart';
 class AnimatedButton extends StatefulWidget {
   // * @param onTap  The function that is called whenever the widget is tapped
   final GestureTapCallback onTap;
+
   final Widget child;
   // * @param type  There are 16 predefined themes from which you can choose from if you dont want to customize the widget yourself
-  final PredefinedThemes type;
+
+  final PredefinedThemes? type;
   // * @param animationCurve  The curve that the animation will follow
-  final Curve animationCurve;
+
+  final Curve? animationCurve;
   // * @param enabled  To check whether the button is enabbled or not
-  final bool enabled;
+
+  final bool? enabled;
   // * @param isMultiColor  To check whether the button has multiple color gradient or not
-  final bool isMultiColor;
+
+  final bool? isMultiColor;
   // * @param isOutline  To check whether the button has a outline or not
-  final bool isOutline;
+
+  final bool? isOutline;
   // * @param darkShadow  To check whether the button has dark or light shadow
-  final bool darkShadow;
+
+  final bool? darkShadow;
 
   // * @param duration  The time that the animation takes in milliseconds
-  final int duration;
+  final int? duration;
 
   // * @param height  The height of the widget
-  final double height;
+  final double? height;
+
   // * @param width  The width of the widget
-  final double width;
+  final double? width;
+
   // * @param blurRadius  The radius of the blur effect of the widget
-  final double blurRadius;
+  final double? blurRadius;
+
   // * @param borderRadius  The radius of the borders of the widget
-  final double borderRadius;
+  final double? borderRadius;
+
   // * @param shadowHeightBottom  The height of the shadow and the animation of the widget from the bottom of the child widget
-  final double shadowHeightBottom;
+  final double? shadowHeightBottom;
+
   // * @param shadowHeightLeft  The height of the shadow and the animation of the widget from the left of the child widget
-  final double shadowHeightLeft;
+  final double? shadowHeightLeft;
+
   // * @param borderWidth  The width of the border of the widget
-  final double borderWidth;
+  final double? borderWidth;
 
   // * @param borderColor  The color of the border of the widget(if type is not null, this will not work, is Outline should be true for this to work)
-  final Color borderColor;
+  final Color? borderColor;
+
   // * @param blurColor  The color of the blur of the widget(if type is not null, this will not work)
-  final Color blurColor;
+  final Color? blurColor;
+
   // * @param color  The color of the widget(if type is not null, this will not work)
-  final Color color;
+  final Color? color;
+
   // * @param shadowColor  The color of the shadow of the widget(if type is not null, this will not work)
-  final Color shadowColor;
+  final Color? shadowColor;
 
   // * @param colors  The list of colors for the gradient for the background of the widget(isMulticolor should be true for this to work)
-  final List<Color> colors;
+  final List<Color>? colors;
 
-  AnimatedButton({
-    Key key,
-    @required this.onTap,
-    @required this.child,
+  const AnimatedButton({
+    Key? key,
+    required this.onTap,
+    required this.child,
     this.enabled = true,
     this.type = PredefinedThemes.primary,
     this.color = Colors.blue,
@@ -75,39 +91,28 @@ class AnimatedButton extends StatefulWidget {
         super(key: key);
 
   @override
-  _AnimatedButtonState createState() => _AnimatedButtonState(
-        type: this.type,
-        color: this.color,
-        blurColor: this.blurColor,
-        borderColor: this.borderColor,
-      );
+  _AnimatedButtonState createState() => _AnimatedButtonState();
 }
 
 class _AnimatedButtonState extends State<AnimatedButton> {
-  double btnPositionBottom;
-  double btnPositionTop;
-  double btnPositionLeft;
-  double btnPositionRight;
-  PredefinedThemes type;
-  Color color;
-  Color shadowColor;
-  Color borderColor;
-  Color blurColor;
-  _AnimatedButtonState({
-    this.type,
-    this.color,
-    this.shadowColor,
-    this.borderColor,
-    this.blurColor,
-  });
+  double? btnPositionBottom;
+  double? btnPositionTop;
+  double? btnPositionLeft;
+  double? btnPositionRight;
+  PredefinedThemes? type;
+  Color? color;
+  Color? shadowColor;
+  Color? borderColor;
+  Color? blurColor;
+  _AnimatedButtonState();
 
   @override
   void initState() {
     super.initState();
     // check if there is a PredefinedThemes type used in the widget
     // if yes, over-ride all the colors of the widget
-    if (type != null) {
-      int index = type.index;
+    if (widget.type != null) {
+      int index = widget.type!.index;
       setState(() {
         color = definedColors[index]["color"];
         shadowColor = definedColors[index]["shadowColor"];
@@ -131,13 +136,16 @@ class _AnimatedButtonState extends State<AnimatedButton> {
 
   @override
   Widget build(BuildContext context) {
-    final double height = widget.height - btnPositionBottom;
+    final double height = widget.height! - btnPositionBottom!;
 
     return GestureDetector(
+      onTapDown: widget.enabled! ? _tapDown : null,
+      onTapUp: widget.enabled! ? _tapUp : null,
+      onTapCancel: widget.enabled! ? _unTap : null,
       child: Center(
-        child: Container(
-          width: widget.width + btnPositionLeft,
-          height: height + btnPositionBottom,
+        child: SizedBox(
+          width: widget.width! + btnPositionLeft!,
+          height: height + btnPositionBottom!,
           child: Stack(
             children: <Widget>[
               Positioned(
@@ -146,30 +154,31 @@ class _AnimatedButtonState extends State<AnimatedButton> {
                   height: height,
                   width: widget.width,
                   decoration: BoxDecoration(
-                    gradient: widget.isMultiColor
+                    gradient: widget.isMultiColor!
                         ? LinearGradient(
-                            colors: shadow(widget.colors, widget.darkShadow),
+                            colors: shadow(widget.colors!, widget.darkShadow!),
                           )
                         : null,
                     color: (widget.shadowColor != null)
                         ? widget.shadowColor
-                        : shadow((widget.isOutline) ? [color] : [borderColor],
-                            widget.darkShadow),
+                        : shadow(
+                            (widget.isOutline!) ? [color!] : [borderColor!],
+                            widget.darkShadow!),
                     borderRadius: BorderRadius.all(
                       Radius.circular(
-                        widget.borderRadius,
+                        widget.borderRadius!,
                       ),
                     ),
-                    border: widget.isOutline
+                    border: widget.isOutline!
                         ? Border.all(
-                            color: borderColor,
-                            width: widget.borderWidth,
+                            color: borderColor!,
+                            width: widget.borderWidth!,
                           )
                         : null,
                     boxShadow: <BoxShadow>[
                       BoxShadow(
-                        color: blurColor,
-                        blurRadius: widget.blurRadius,
+                        color: blurColor!,
+                        blurRadius: widget.blurRadius!,
                         offset: Offset(0.0, 0.0),
                       ),
                     ],
@@ -177,29 +186,29 @@ class _AnimatedButtonState extends State<AnimatedButton> {
                 ),
               ),
               AnimatedPositioned(
-                curve: widget.animationCurve,
-                duration: Duration(milliseconds: widget.duration),
+                curve: widget.animationCurve!,
+                duration: Duration(milliseconds: widget.duration!),
                 bottom: btnPositionBottom,
                 left: btnPositionLeft,
                 child: Container(
                   height: height,
                   width: widget.width,
                   decoration: BoxDecoration(
-                    gradient: widget.isMultiColor
+                    gradient: widget.isMultiColor!
                         ? LinearGradient(
-                            colors: widget.colors,
+                            colors: widget.colors!,
                           )
                         : null,
                     color: color,
                     borderRadius: BorderRadius.all(
                       Radius.circular(
-                        widget.borderRadius,
+                        widget.borderRadius!,
                       ),
                     ),
-                    border: widget.isOutline
+                    border: widget.isOutline!
                         ? Border.all(
-                            color: borderColor,
-                            width: widget.borderWidth,
+                            color: borderColor!,
+                            width: widget.borderWidth!,
                           )
                         : null,
                   ),
@@ -212,9 +221,6 @@ class _AnimatedButtonState extends State<AnimatedButton> {
           ),
         ),
       ),
-      onTapDown: widget.enabled ? _tapDown : null,
-      onTapUp: widget.enabled ? _tapUp : null,
-      onTapCancel: widget.enabled ? _unTap : null,
     );
   }
 
@@ -244,13 +250,13 @@ class _AnimatedButtonState extends State<AnimatedButton> {
   shadow(List<Color> colors, bool darkShadow) {
     List<Color> w = [];
 
-    colors.forEach((color) {
+    for (var color in colors) {
       double amount = darkShadow ? 0.22 : 0.1;
       final hsl = HSLColor.fromColor(color);
       final hslDark =
           hsl.withLightness((hsl.lightness - amount).clamp(0.0, 1.0));
       w.add(hslDark.toColor());
-    });
+    }
     return (w.length == 1) ? w[0] : w;
   }
 }

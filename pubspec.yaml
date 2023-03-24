@@ -1,11 +1,11 @@
 name: button_animations
 description: A package that helps you make highly customizable animated 3d-buttons.
 
-version: 1.0.1+2
+version: 2.0.0+3
 homepage: https://github.com/anshrathod/button_animations
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.19.3 <3.0.0"
 
 dependencies:
   flutter:
@@ -14,5 +14,6 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_lints:
 flutter:
   uses-material-design: true
